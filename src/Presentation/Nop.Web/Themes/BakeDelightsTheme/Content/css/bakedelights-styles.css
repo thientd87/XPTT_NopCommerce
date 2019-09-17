@@ -41,7 +41,17 @@ input[type=file] {width: 100%;}
 
 
 /* HEADER SECTION STYLE */
-.header-logo{margin-top:10px;}
+.header-logo{margin:10px;}
+.header-logo img {
+  height:110px; width:auto;
+}
+.header-brandname {
+  font-family: 'Inconsolata', monospace;
+  font-weight: bold;
+  font-size: 36px;
+  color: #006442;
+  margin-top:-30px;
+}
 .header-upper{background:#303133;box-shadow:0px 0px 3px #999;-webkit-box-shadow: 0px 0px 3px #999;-moz-box-shadow: 0px 0px 3px #999;height:46px;}
 .currency-selector,.language-selector{float:left;margin:8px 8px 0px 0px;}
 .header-selectors-wrapper select{background: #303133 url("/Themes/BakeDelightsTheme/Content/images/down-caret.png") no-repeat scroll right center !important;-moz-appearance: none;color:#fff;width:80px;margin-top:0px !important;padding:0px 12px 0 0!important;height:30px;font-size:14px;border:none !important;-webkit-appearance:none;}
@@ -201,7 +211,10 @@ form#small-search-box-form .form-group {margin-bottom: 8px;}
 .footer-store-theme{text-align:center;}
 .footer{float:left;width:100%;margin-top:50px;}
 .footer ul.nav li a{padding:0;}
-.footer-upper{background:url(../images/Newsletter-bg.png);background-size: cover;}
+.footer-upper {
+  background: url(../images/Bamboo_charcoal2.jpg);
+  background-size: cover;
+}
 .footer-upper .social-wrapper{float:right;}
 .footer-upper .social-wrapper li{float:left;}
 .footer-upper .social-wrapper li a{float:left;height:45px;width:45px;border:1px solid #ddd;margin-right:10px;text-align:center;line-height:45px;background:#fff;color:#303133;font-size:20px;}
