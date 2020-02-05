@@ -28,7 +28,7 @@ namespace Nop.Web.Framework.Infrastructure.Extensions
             if (nopConfig.UseRowNumberForPaging)
                 dbContextOptionsBuilder.UseSqlServer(dataSettings.DataConnectionString, option => option.UseRowNumberForPaging());
             else
-                dbContextOptionsBuilder.UseSqlServer(dataSettings.DataConnectionString);
+                dbContextOptionsBuilder.UseSqlServer(dataSettings.DataConnectionString, options => options.EnableRetryOnFailure());
         }
     }
 }
